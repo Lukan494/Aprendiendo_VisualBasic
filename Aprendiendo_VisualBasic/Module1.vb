@@ -49,6 +49,55 @@
         numero1 = Console.ReadLine()
         Console.WriteLine("Su numero es: " & numero1)
 
+        '========================================================================================
+        'CONDICIONALES
+        Console.WriteLine("Menu Principal")
+        Console.WriteLine("Opciones:")
+        Console.WriteLine("1. Opcion 01")
+        Console.WriteLine("2. Opcion 02")
+        Console.WriteLine("3. Opcion 03")
+        Console.WriteLine("4. Salir")
+        Console.WriteLine()
+
+        Console.WriteLine("Elige para la estructura if: ")
+        Dim opcionUsuarioIf As Integer = CInt(Console.ReadLine)
+
+        'ESTRUCTURA CONDICIONAL IF-IFELSE-ELSE ANIDADA
+        If opcionUsuarioIf = 1 Then
+            Console.WriteLine("Elegiste la opcion 1 [if]")
+        ElseIf opcionUsuarioIf = 2 Then
+            Console.WriteLine("Elegiste la opcion 2 [if]")
+        ElseIf opcionUsuarioIf = 3 Then
+            Console.WriteLine("Elegiste la opcion 3 [if]")
+        ElseIf opcionUsuarioIf = 4 Then
+            Console.WriteLine("Elegiste la opcion 4 [if]")
+        Else
+            Console.WriteLine("Fuera del rango de opciones [if]")
+        End If
+
+
+
+        Console.WriteLine("Elige para la estructura case: ")
+        Dim opcionUsuariocase As Integer = CInt(Console.ReadLine)
+
+        'ESTRUCTURA CONDICIONAL CASE
+        Select Case opcionUsuariocase
+            Case 1
+                Console.WriteLine("Elegiste la opcion 1 [case]")
+            Case 2
+                Console.WriteLine("Elegiste la opcion 2 [case]")
+            Case 3
+                Console.WriteLine("Elegiste la opcion 3 [case]")
+            Case 4
+                Console.WriteLine("Elegiste la opcion 4 [case]")
+            Case Else
+                Console.WriteLine("Fuera del rango de opciones [case]")
+        End Select
+
+        '========================================================================================
+
+
+
     End Sub
 
 End Module
