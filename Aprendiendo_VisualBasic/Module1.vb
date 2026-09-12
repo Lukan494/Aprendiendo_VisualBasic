@@ -45,12 +45,14 @@
         '========================================================================================
         'OBTENER Y GUARDAR LOS DATOS QUE INGRESE EL USUARIO
         Dim numero1 As Integer
+        Console.WriteLine()
         Console.WriteLine("Introduzca un numero: ")
         numero1 = Console.ReadLine()
         Console.WriteLine("Su numero es: " & numero1)
 
         '========================================================================================
         'CONDICIONALES
+        Console.WriteLine()
         Console.WriteLine("Menu Principal")
         Console.WriteLine("Opciones:")
         Console.WriteLine("1. Opcion 01")
@@ -96,7 +98,57 @@
 
         '========================================================================================
 
+        'OPERADORES LOGICOS
 
+        Dim dato1 As Integer = 10
+        Dim dato2 As String = "diez"
+
+        'OPERADOR LOGICO AND
+
+        Console.WriteLine("El operador logico AND debes de ingresar los dos datos correctos")
+        Console.WriteLine("Ingrese los datos secretos: ")
+        Console.WriteLine("Ingrese el numero: ")
+        dato1 = Console.ReadLine()
+        Console.WriteLine("Ingrese la palabra: ")
+        dato2 = Console.ReadLine()
+        Console.WriteLine()
+
+
+        If dato1 = 10 And dato2 = "diez" Then
+            Console.WriteLine("Los datos son correctos")
+        Else
+            Console.WriteLine("Datos Incorrectos")
+        End If
+
+
+        'OPERADOR LOGICO OR
+        Console.WriteLine("El operador logico OR debes de ingresar almenos un dato correcto")
+        Console.WriteLine("Ingrese los datos secretos: ")
+        Console.WriteLine("Ingrese el numero: ")
+        dato1 = Console.ReadLine()
+        Console.WriteLine("Ingrese la palabra: ")
+        dato2 = Console.ReadLine()
+        Console.WriteLine()
+
+        If dato1 = 10 Or dato2 = "diez" Then
+            Console.WriteLine("Almenos un dato es correcto")
+        Else
+            Console.WriteLine("Datos Incorrectos")
+        End If
+
+        '========================================================================================
+
+        'BLOQUE FOR
+        Dim i As Integer
+        For i = 0 To 10 'PODEMOS DEFINIR QUE SEA DE UNO EN UNO O DE DOS EN DOS CON EL ARGUMENTO STEP 2
+            Console.WriteLine("Bloqur for bucle  nº: " & i)
+        Next
+
+        '========================================================================================
+
+        'BLOQUE WHILE
+
+        'ARRAY
 
     End Sub
 
