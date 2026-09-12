@@ -2,6 +2,8 @@
 
     Sub Main()
 
+        Entrada()
+
         'IMPRIMIR UN TEXTO EN CONSOLA
         Console.WriteLine("Hola mundo!")
 
@@ -148,8 +150,40 @@
 
         'BLOQUE WHILE
 
+        Dim x As Integer = 0
+
+        'ES UNA ESTRUCTURA DE BUBLE INFINITO, NO PARA
+        Console.WriteLine("Bucle infinito")
+        'Do
+        '    Console.WriteLine(x)
+        '    Console.ReadLine()
+        '    x += 1
+        'Loop
+
+
+        'CON WHILE LE DAMOS UNA CONDICION
+        Console.WriteLine("Bucle con while")
+        Do While x < 100
+            Console.WriteLine(x)
+            x += 1
+        Loop
+
+        'CON UNTIL LE DEFINIMOS QUE SEA HASTA QUE CUMPLA CIERTO VALOR
+        Console.WriteLine("Bucle con until")
+        Do Until x = 100
+            Console.WriteLine(x)
+            x += 1
+        Loop
+
+        '========================================================================================
+
         'ARRAY
 
+    End Sub
+
+    'METODOS MAS QUE EL MAIN
+    Private Sub Entrada()
+        Console.WriteLine("ENTRADA DESDE UN METODO EXTERNO")
     End Sub
 
 End Module
